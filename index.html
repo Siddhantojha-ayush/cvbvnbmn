@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <title>Love Calculator</title>
+    <style>
+        .body {
+            background-image: url(download.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .text {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+            padding: 0%;
+            margin: 0%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="text">PRESS CTRL+R TO DO THIS PROCESS AGAIN</h1>
+</body>
+<script>
+    let runAgain = true;
+    while (runAgain) {
+        a = prompt("Enter Your Name: ")
+        b = prompt("Enter Your Crush's Name: ")
+        n = Math.random() * 100
+        n = Math.floor(n)
+        if (n <= 50) {
+            alert("चला जा भाई she is not made for you")
+        }
+        else {
+            alert("He/She is made for you")
+        }
+        alert("press OK to know how much He/She feels for you")
+        alert(n)
+        runAgain=confirm("Do you want to retry?")
+    }
+</script>
+
+</html>
